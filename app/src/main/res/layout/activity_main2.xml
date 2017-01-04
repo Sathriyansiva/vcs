@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:touchscreenBlocksFocus="false">-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText1"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/rounded_corner"-->
+        <!--android:textColor="@color/bright_foreground_inverse_material_dark"-->
+        <!--android:textSize="20sp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textIsSelectable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:nextFocusDown="@+id/editText2"-->
+        <!--android:hint="BranchID"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/rounded_corner"-->
+        <!--android:textColor="@color/bright_foreground_inverse_material_dark"-->
+        <!--android:textSize="20sp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textIsSelectable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:nextFocusDown="@+id/editText3"-->
+        <!--android:hint="LocationID"/>-->
+    <!--<EditText-->
+        <!--android:id="@+id/editText3"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/rounded_corner"-->
+        <!--android:textColor="@color/bright_foreground_inverse_material_dark"-->
+        <!--android:textSize="20sp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textIsSelectable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:nextFocusDown="@+id/editText4"-->
+        <!--android:hint="TeamLeaderID"/>-->
+    <!--<EditText-->
+        <!--android:id="@+id/editText4"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:maxLength="10"-->
+        <!--android:background="@drawable/rounded_corner"-->
+        <!--android:textColor="@color/bright_foreground_inverse_material_dark"-->
+        <!--android:textSize="20sp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textIsSelectable="false"-->
+        <!--android:padding="10dp"-->
+        <!--android:nextFocusDown="@+id/editText5"-->
+        <!--android:hint="UserID"/>-->
+<!--</LinearLayout>-->
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridView1"
+    android:gravity="center"
+    android:stretchMode="columnWidth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+</GridView>

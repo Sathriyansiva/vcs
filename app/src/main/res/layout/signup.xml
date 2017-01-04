@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:touchscreenBlocksFocus="false">
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:maxLength="10"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText2"
+        android:onClick="removeerr1"
+        android:inputType="textCapCharacters"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:maxLength="10"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText3"
+        android:onClick="removeerr2"
+        android:hint="Father Name"/>
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:maxLength="10"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText4"
+        android:onClick="removeerr3"
+        android:hint="Mobile No"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText5"
+        android:onClick="removeerr4"
+        android:hint="Address"/>
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:maxLength="10"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText6"
+        android:hint="EmailID"/>
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="loadImagefromGallery"
+        android:background="@drawable/imgbackground">
+    </ImageView>
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:maxLength="10"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/editText7"
+        android:text=""
+        android:gravity="center"
+        android:onClick="datebtn"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/gend"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:gravity="left"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:text="Gender"/>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/gend"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="17sp"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:buttonTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+    </RelativeLayout>
+
+    <!--<Spinner-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:focusable="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/rounded_corner" />-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:padding="10dp"
+        android:text="Vehicle Used"
+        android:gravity="center" />
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Two Wheeler"
+        android:id="@+id/checkbox1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:buttonTint="@color/colorPrimary"
+        android:textSize="17sp"/>
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Three Wheeler"
+        android:id="@+id/checkbox2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:buttonTint="@color/colorPrimary"
+        android:textSize="17sp"/>
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Four Wheeler"
+        android:id="@+id/checkbox3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:buttonTint="@color/colorPrimary"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:padding="10dp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Send"
+        android:id="@+id/back"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="BackButton"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="NextButton"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Speech Text"
+        android:id="@+id/speechtext"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="SpeechText"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Speech Recognition"
+        android:id="@+id/voicerecogni"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="VoiceRecognition"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Gallery Image"
+        android:id="@+id/fullimage"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="FullImage"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Multiple Images"
+        android:id="@+id/multiimage"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="MultiImage"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Scroll Menu"
+        android:id="@+id/scrollmenu"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="ScrollMenu"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="PayuMoney1"
+        android:id="@+id/Pay1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="HtmlPage1"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="PayuMoney2"
+        android:id="@+id/Pay2"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="HtmlPage2"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="PayuMoney3"
+        android:id="@+id/Pay3"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="HtmlPage3"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="PayuMoney4"
+        android:id="@+id/Pay4"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="HtmlPage4"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Zoom Image"
+        android:id="@+id/imagezoom"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="imagezooming"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Signature"
+        android:id="@+id/signature"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="signclick"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="top|bottom|center_horizontal"
+        android:text="Rozar Payment"
+        android:id="@+id/razorpay"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="razorpayclick"
+        android:textColor="@color/abc_secondary_text_material_dark" />
+
+    <!--<WebView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/webView"></WebView>-->
+</LinearLayout>
+    </ScrollView>

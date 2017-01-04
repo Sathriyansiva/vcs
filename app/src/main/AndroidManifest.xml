@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.testing.admin.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vcslogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.testing.admin.myapplication.testing1" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.testing.admin.myapplication.SignUp" android:label="SignUp"></activity>
+        <activity android:name="com.testing.admin.myapplication.MainActivity2"></activity>
+        <activity android:name="com.testing.admin.myapplication.MultiImages" android:label="Multi Images"></activity>
+        <activity android:name="com.testing.admin.myapplication.SpeechTextActivity" android:label="Speech Text"></activity>
+        <activity android:name="com.testing.admin.myapplication.VoiceRecognitionActivity" android:label="Voice Recognition"></activity>
+        <activity android:name="com.testing.admin.myapplication.GalleryFullImageActivity" android:label="Fullimage From Gallery"></activity>
+        <activity android:name="com.testing.admin.myapplication.GalleryMultiImageActivity" android:label="Multi Image From Gallery"></activity>
+        <activity android:name="com.testing.admin.myapplication.CustomPhotoGalleryActivity" android:label="Photo Gallery"></activity>
+        <activity android:name="com.testing.admin.myapplication.ScrollMenuActivity" android:label="Scroll Menu"></activity>
+        <activity android:name="com.testing.admin.myapplication.ViralAndroidActivity" android:label="Viral Android">
+        </activity>
+        <activity android:name="com.testing.admin.myapplication.GoogleActivity" android:label="Google">
+        </activity>
+        <activity android:name="com.testing.admin.myapplication.PaymentActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.PayMentGateWay" android:label="Payment Gateway"></activity>
+        <activity android:name="com.testing.admin.myapplication.MultiTouchActivity" android:label="Image Zoom"></activity>
+        <activity android:name="com.testing.admin.myapplication.Payment2TestActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.PaymentGateway2TestActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.Payment3TestActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.PaymentGateway3TestActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.Payment4TestActivity" android:label="Payment"></activity>
+        <activity android:name="com.testing.admin.myapplication.PaymentGateway4TestActivity" android:label="Payment"></activity>
+        <activity android:name=".CaptureSignatureActivity"
+            android:label="Signature">
+        </activity>
+        <activity android:name=".CaptureSignature" android:label="Signature Confirmation"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".MergeImageActivity" android:label="Image Merging"></activity>
+        <activity android:name=".MailSenderActivity" android:label="Mail Sending"></activity>
+        <activity android:name=".DataBaseActivity" android:label="Data Base"></activity>
+        <activity android:name=".DataBaseDisplayContact" android:label="Data Base List"></activity>
+        <activity android:name=".RazorPaymentActivity" android:label="Payment"></activity>
+        <activity android:name="com.razorpay.CheckoutActivity" android:label="Payment" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"></activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+</manifest>
